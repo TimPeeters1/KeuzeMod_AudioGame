@@ -25,7 +25,7 @@ public class PlayerFollower : MonoBehaviour
             doMovement();
         }
     }
-
+    
     void doMovement()
     {
         vCamObject.GetCinemachineComponent<CinemachineTrackedDolly>().m_PathPosition += walkSpeed * 0.001f;
