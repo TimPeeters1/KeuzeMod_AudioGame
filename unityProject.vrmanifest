@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.keuzemodule_audiogame.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "D:\\Documenten\\KeuzeModule_AudioGame\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "KeuzeModule_AudioGame [Testing]"
+        }
+      }
+    }
+  ]
+}
