@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
+//[RequireComponent(typeof(AudioSource))]
 public class AudioTrigger : MonoBehaviour
 {
     enum triggerType { player, personToFollow, other};

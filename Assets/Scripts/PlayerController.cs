@@ -35,8 +35,11 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         cameraObject = GetComponentInChildren<Camera>();
-        cinematicVCam = GetComponent<CinemachineVirtualCamera>();
-        cinematicVCam.GetCinemachineComponent<CinemachineTrackedDolly>().m_PathPosition = 0f;
+        if (GetComponent<CinemachineVirtualCamera>())
+        {
+            cinematicVCam = GetComponent<CinemachineVirtualCamera>();
+            cinematicVCam.GetCinemachineComponent<CinemachineTrackedDolly>().m_PathPosition = 0f;
+        }
 
         footstepSource.volume = 0;
     }
@@ -49,6 +52,11 @@ public class PlayerController : MonoBehaviour
             {
                 _vert = moveVector.axis.y;
                 _horz = moveVector.axis.x;
+            }
+            else
+            {
+                _vert = 0;
+                _horz = 0;
             }
         }
         else
